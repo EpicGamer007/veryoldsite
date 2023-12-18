@@ -1,0 +1,28 @@
+{
+	"background_color": "black",
+	"categories": [
+		"social",
+		"utilities",
+		"navigation"		
+	],
+	"description": "Abhay's personal website",
+	"dir": "ltr",
+	"display": "fullscreen",
+	"icons": [
+		{
+			"src": "/icon-192.png", "type": "image/png", "sizes": "192x192"
+		},
+		{
+			"src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable"
+		}
+	],
+	"lang": "en-US",
+	"name": "Abhay",
+	"orientation": "any",
+	"prefer_related_applications": false,
+	"related_applications": [],
+	"scope": "/",
+	"short_name": "Abhay",
+	"start_url": "/",
+	"theme_color": "black"
+}

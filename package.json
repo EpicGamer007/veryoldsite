@@ -1,0 +1,43 @@
+{
+	"name": "EpicGamer007",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "My portfolio site",
+	"private": "true",
+	"main": "./src/index.js",
+	"scripts": {
+		"start": "NODE_ENV=production node --experimental-specifier-resolution=node src",
+		"dev": "NODE_ENV=development node --abort-on-uncaught-exception --throw-deprecation --trace-warnings --unhandled-rejections=strict --experimental-specifier-resolution=node src",
+		"format": "printf \"npx prettier --write --use-tabs --tab-width 4 src\n(Not running)\n\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EpicGamer007/portfolio-site.git"
+	},
+	"keywords": [
+		"portfolio",
+		"abhay",
+		"epicgamer007"
+	],
+	"author": {
+		"name": "EpicGamer007",
+		"url": "https://abhay7.is-a.dev"
+	},
+	"license": "AGPL-3.0-or-later",
+	"dependencies": {
+		"compression": "^1.7.4",
+		"cookie-session": "^1.4.0",
+		"ejs": "^3.1.6",
+		"express": "^4.17.1",
+		"express-ejs-layouts": "^2.5.1",
+		"express-minify": "^1.0.0",
+		"express-rate-limit": "^5.2.6",
+		"helmet": "^4.6.0",
+		"node-fetch": "^3.1.1"
+	},
+	"devDependencies": {},
+	"bugs": {
+		"url": "https://github.com/EpicGamer007/portfolio-site/issues"
+	},
+	"homepage": "https://github.com/EpicGamer007/portfolio-site"
+}

@@ -1,0 +1,58 @@
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Basic page info meta tags -->
+<meta name="description" content="<%- desc %>"/>
+<meta name="author" content="Abhay"/>
+<meta name="keywords" content="abhay, personal, portfolio, blog, programming, technology, halo, gaming, games, fun, video, stats, statistics, videos"/>
+<meta name="copyright" content="<%- data.year -%>"/>
+<meta name="version" content="<%- data.version -%>"/>
+<meta name="application-name" content="Abhay"/>
+<meta name="rating" content="General"/>
+
+<!-- Open Graph/Facebook meta tags -->
+<meta property="og:title" content="<%- title -%>"/>
+<meta property="og:url" content="<%- data.url -%>"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="<%- data.href -%>/static/images/bg.jpg"/>
+<meta property="og:image:alt" content="The background image to my portfolio site">
+<meta property="og:description" content="<%- desc -%>"/>
+<meta property="og:site_name" content="Abhay">
+
+<!-- Twitter meta tags -->
+<meta name="twitter:card" content="summary_large_image"/>
+
+<!-- Miscellaneous meta tags -->
+<meta name="google" content="notranslate"/>
+<meta name="theme-color" content="#142134"/>
+
+<%- meta -%>
+
+<!-- Page info -->
+<title><%- title -%></title>
+
+<!-- Icons and manifest-->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest"/>
+
+<!-- scripts -->
+
+<!--
+<script type="module" src="/static/scripts/swup/min.js"></script>
+<script type="module" src="/static/scripts/swup/HeadPlugin.js"></script>
+
+
+<% if(data.dev) { %>
+	<script type="module" src="/static/scripts/swup/DebugPlugin.js"></script>
+<% } %>
+-->
+
+<script type="module" src="/static/scripts/script.js"></script>
+<%- script %>
+
+<script nomodule="nomodule" src="/static/scripts/nomodule.js"></script>
+
+<link rel="stylesheet" href="/static/styles/water.min.css"/>
+<link rel="stylesheet" href="/static/styles/style.css"/>
+<%- style -%>

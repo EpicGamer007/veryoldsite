@@ -1,0 +1,61 @@
+/* Fonts *//*
+@font-face {
+	font-family: halo;
+	src: url(/static/fonts/halo.ttf);
+}
+
+@font-face {
+	font-family: halo-outline;
+	src: url(/static/fonts/halo-outline.ttf);
+}
+*/
+
+/* scrollbar *//*
+::-webkit-scrollbar {
+	width: 1vh;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: rgb(10, 0, 36);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(40, 0, 175, 0.2);
+	transition: background 500ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(25, 5, 100);
+}
+*/
+
+/* Swup transitions */
+.transition-fade {
+	transition: 0.4s;
+	opacity: 1;
+}
+
+html.is-animating .transition-fade {
+	opacity: 0;
+}
+
+/* Skip to main content */
+.skip-to-content-link {
+	height: 30px;
+	left: 50%;
+	padding: 8px;
+	position: absolute;
+	transform: translateY(-150%);
+	transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+	transform: translateY(0%);
+}
+
+/* List ignore bullet */
+.list-style-type-none {
+	list-style-type: none;
+}

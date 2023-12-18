@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include("./components/head") %>
+	</head>
+	<body>
+		<a class="skip-to-content-link" href="#swup" data-no-swup="data-no-swup">
+			Skip to main content
+		</a>
+		<%- include("./components/header") %>
+		
+		<main aria-live="polite" id="swup" class="transition-fade" tabindex="-1">
+			<%- body %>
+		</main>
+		
+		<%- include("./components/footer") %>
+
+		<!--<noscript>
+			<h1>Sorry, the page "<%= title %>" requires JavaScript (ECMAScript) to function. Your browser does not support JavaScript or JavaScript has been disabled. If it has been disabled, please enable it to use this webapp.</h1>
+		</noscript>-->
+		
+	</body>
+</html>

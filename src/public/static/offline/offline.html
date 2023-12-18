@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-security-policy" content="upgrade-insecure-requests; default-src 'none'; script-src 'none'; script-src-elem 'unsafe-inline'; style-src 'none'; style-src-elem 'unsafe-inline'; manifest-src 'self'; font-src 'self'; img-src 'self'">
+		
+		<style>
+
+			html {
+				background-color: black;
+				color: ghostwhite;
+				font-family: Verdana;
+			}
+
+			body {
+				text-align: center;
+			}
+
+		</style>
+		
+		<title>You are offline</title>
+	</head>
+
+	<body>
+		<main>
+			<h1>You are offline</h1>
+			<h3>You are not online, please be online in order to use this webapp</h3>
+			<button id="reload">Reload page</button>
+		</main>
+		<script type="module">
+			const reload = () => {
+				if(location.pathname === "/static/offline/offline.html") {
+					location.pathname = "/";
+				} else {
+					location.reload();
+				}
+			}
+			window.addEventListener("online", reload);
+			document.getElementById("reload").addEventListener("click", reload);
+			window.setInterval(reload, 1000 * 60);
+		</script>				
+
+	</body>
+
+</html>

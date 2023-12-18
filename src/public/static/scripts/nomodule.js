@@ -1,0 +1,1 @@
+if(location.pathname !== "/unsupported") location.pathname = "/unsupported";
